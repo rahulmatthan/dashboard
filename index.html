@@ -42,9 +42,15 @@ td { border-bottom:1px solid var(--rule); padding:7px 8px; vertical-align:top }
 .empty { color:var(--muted); padding:20px }
 a { color:inherit }
 .foot { color:var(--muted); font-size:12.5px; margin-top:28px }
+.reload { font:inherit; font-size:13px; margin-left:8px; padding:3px 12px; border-radius:99px; border:1px solid var(--rule); background:var(--surface); color:var(--ink); cursor:pointer }
+.reload:hover { border-color:var(--ink2) }
+.age.stale { color:var(--down) }
 </style></head><body><main>
 <h1>Ex Machina on Amazon.in</h1>
-<p class="sub">Read Wednesday 23 September, 17:41 IST · 24 readings since 22 Sep · hourly while the Mac is awake · this page reloads every 10 minutes</p>
+<p class="sub">Last reading <b>Wednesday 23 September, 17:41</b> IST · next due about <b>18:41</b> · 24 readings since 22 Sep · hourly while the Mac is awake
+<button class="reload" onclick="location.reload()">Reload</button> <span class="age" data-t="2026-09-23T17:41:00+05:30"></span></p>
+<script>(function(){var e=document.querySelector('.age');var t=new Date(e.dataset.t);var m=Math.round((Date.now()-t)/60000);
+e.textContent=m<1?'· just now':'· '+(m<120?m+' min ago':Math.round(m/60)+' h ago')+(m>90?' — the Mac may be asleep':'');if(m>90)e.classList.add('stale');})();</script>
 <div class="tiles"><div class="tile"><div class="tlab">Books overall</div>
   <div class="tnum">#8,012</div>
   <div class="tsub"><span class="down">▼ 140</span> 6h · <span class="">—</span> 24h · best #7,872</div></div><div class="tile"><div class="tlab">Economic Conditions</div>
