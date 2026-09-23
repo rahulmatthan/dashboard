@@ -28,10 +28,11 @@ h1 { font-size:22px; margin:0 0 2px; font-weight:600 }
 .grid { stroke:var(--grid); stroke-width:1 } .grid.v { stroke-dasharray:2 3 }
 .line { fill:none; stroke:var(--c); stroke-width:2; stroke-linejoin:round; stroke-linecap:round }
 .pt { fill:var(--c); stroke:var(--surface); stroke-width:2 } .pt:hover { r:6 }
+.lg { fill:var(--c) }
 .dlab { font-size:12px; font-weight:600; fill:var(--ink) }
 .push { stroke:var(--push); stroke-width:1.5; stroke-dasharray:4 3; opacity:.8 }
 .pushlab { font-size:10.5px; fill:var(--push); font-weight:600 }
-@media (prefers-color-scheme: dark) { .line { stroke:var(--cd) } .pt { fill:var(--cd) } }
+@media (prefers-color-scheme: dark) { .line { stroke:var(--cd) } .pt, .lg { fill:var(--cd) } }
 h2 { font-size:16px; margin:28px 0 8px; font-weight:600 }
 table { border-collapse:collapse; width:100%; font-size:13.5px }
 th { text-align:left; color:var(--ink2); font-weight:500; font-size:12px; border-bottom:1px solid var(--rule); padding:6px 8px }
@@ -57,106 +58,66 @@ a { color:inherit }
   <div class="tsub">#9 Agriculture &amp; Farming · #36 Political Theory · best #17,484</div></div></div>
 <div class="card"><svg class="chart" viewBox="0 0 880 300" role="img" aria-label="Store rank — Books (hardcover) and Kindle Store" data-chart="overall">
 <text class="ctitle" x="64" y="16">Store rank — Books (hardcover) and Kindle Store</text>
+<rect x="802.4" y="9" width="10" height="3" rx="1.5" class="lg s-kindle" style="--c:#eb6834;--cd:#d95926"/>
+<text class="tick" x="816.4" y="16">Kindle</text>
+<rect x="721.0" y="9" width="10" height="3" rx="1.5" class="lg s-hardcover" style="--c:#2a78d6;--cd:#3987e5"/>
+<text class="tick" x="735.0" y="16">Hardcover</text>
 <text class="ylab" x="64" y="294" >#1 at top · log scale</text>
 <line class="grid" x1="64" x2="864" y1="28.0" y2="28.0"/>
-<text class="tick" x="56" y="32.0" text-anchor="end">#1,000</text>
-<line class="grid" x1="64" x2="864" y1="62.9" y2="62.9"/>
-<text class="tick" x="56" y="66.9" text-anchor="end">#2,000</text>
-<line class="grid" x1="64" x2="864" y1="109.1" y2="109.1"/>
-<text class="tick" x="56" y="113.1" text-anchor="end">#5,000</text>
-<line class="grid" x1="64" x2="864" y1="144.0" y2="144.0"/>
-<text class="tick" x="56" y="148.0" text-anchor="end">#10,000</text>
-<line class="grid" x1="64" x2="864" y1="178.9" y2="178.9"/>
-<text class="tick" x="56" y="182.9" text-anchor="end">#20,000</text>
-<line class="grid" x1="64" x2="864" y1="225.1" y2="225.1"/>
-<text class="tick" x="56" y="229.1" text-anchor="end">#50,000</text>
+<text class="tick" x="56" y="32.0" text-anchor="end">#5,000</text>
+<line class="grid" x1="64" x2="864" y1="97.8" y2="97.8"/>
+<text class="tick" x="56" y="101.8" text-anchor="end">#10,000</text>
+<line class="grid" x1="64" x2="864" y1="190.2" y2="190.2"/>
+<text class="tick" x="56" y="194.2" text-anchor="end">#25,000</text>
 <line class="grid" x1="64" x2="864" y1="260.0" y2="260.0"/>
-<text class="tick" x="56" y="264.0" text-anchor="end">#100,000</text>
-<line class="grid v" x1="64.0" x2="64.0" y1="28" y2="260"/>
-<text class="tick" x="64.0" y="276" text-anchor="middle">Fri 18</text>
-<line class="grid v" x1="98.6" x2="98.6" y1="28" y2="260"/>
-<text class="tick" x="98.6" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="133.3" x2="133.3" y1="28" y2="260"/>
-<text class="tick" x="133.3" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="167.9" x2="167.9" y1="28" y2="260"/>
-<text class="tick" x="167.9" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="202.6" x2="202.6" y1="28" y2="260"/>
-<text class="tick" x="202.6" y="276" text-anchor="middle">Sat 19</text>
-<line class="grid v" x1="237.2" x2="237.2" y1="28" y2="260"/>
-<text class="tick" x="237.2" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="271.8" x2="271.8" y1="28" y2="260"/>
-<text class="tick" x="271.8" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="306.5" x2="306.5" y1="28" y2="260"/>
-<text class="tick" x="306.5" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="341.1" x2="341.1" y1="28" y2="260"/>
-<text class="tick" x="341.1" y="276" text-anchor="middle">Sun 20</text>
-<line class="grid v" x1="375.8" x2="375.8" y1="28" y2="260"/>
-<text class="tick" x="375.8" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="410.4" x2="410.4" y1="28" y2="260"/>
-<text class="tick" x="410.4" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="445.0" x2="445.0" y1="28" y2="260"/>
-<text class="tick" x="445.0" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="479.7" x2="479.7" y1="28" y2="260"/>
-<text class="tick" x="479.7" y="276" text-anchor="middle">Mon 21</text>
-<line class="grid v" x1="514.3" x2="514.3" y1="28" y2="260"/>
-<text class="tick" x="514.3" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="549.0" x2="549.0" y1="28" y2="260"/>
-<text class="tick" x="549.0" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="583.6" x2="583.6" y1="28" y2="260"/>
-<text class="tick" x="583.6" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="618.2" x2="618.2" y1="28" y2="260"/>
-<text class="tick" x="618.2" y="276" text-anchor="middle">Tue 22</text>
-<line class="grid v" x1="652.9" x2="652.9" y1="28" y2="260"/>
-<text class="tick" x="652.9" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="687.5" x2="687.5" y1="28" y2="260"/>
-<text class="tick" x="687.5" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="722.2" x2="722.2" y1="28" y2="260"/>
-<text class="tick" x="722.2" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="756.8" x2="756.8" y1="28" y2="260"/>
-<text class="tick" x="756.8" y="276" text-anchor="middle">Wed 23</text>
-<line class="grid v" x1="791.4" x2="791.4" y1="28" y2="260"/>
-<text class="tick" x="791.4" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="826.1" x2="826.1" y1="28" y2="260"/>
-<text class="tick" x="826.1" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="860.7" x2="860.7" y1="28" y2="260"/>
-<text class="tick" x="860.7" y="276" text-anchor="middle">18:00</text>
-<line class="push" x1="64.0" x2="64.0" y1="28" y2="260"/>
-<text class="pushlab" x="68.0" y="40">westland</text>
-<line class="push" x1="578.2" x2="578.2" y1="28" y2="260"/>
-<text class="pushlab" x="582.2" y="52">x</text>
-<line class="push" x1="721.2" x2="721.2" y1="28" y2="260"/>
-<text class="pushlab" x="725.2" y="64">x</text>
-<line class="push" x1="722.0" x2="722.0" y1="28" y2="260"/>
-<text class="pushlab" x="726.0" y="40">x</text>
-<line class="push" x1="690.4" x2="690.4" y1="28" y2="260"/>
-<text class="pushlab" x="694.4" y="52">linkedin</text>
-<line class="push" x1="843.0" x2="843.0" y1="28" y2="260"/>
-<text class="pushlab" x="847.0" y="64">linkedin</text>
-<path class="line s-hardcover" d="M724.7,185.1 L725.3,185.1 L814.4,131.9 L814.8,131.9 L820.6,131.9 L826.5,132.8 L832.2,132.8 L839.0,132.8 L843.2,132.8 L844.8,132.8 L852.5,132.8" style="--c:#2a78d6;--cd:#3987e5"/>
-<circle class="pt s-hardcover" cx="724.7" cy="185.1" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Tue 22 Sep 18:26 · #22,614</title></circle>
-<circle class="pt s-hardcover" cx="725.3" cy="185.1" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Tue 22 Sep 18:33 · #22,614</title></circle>
-<circle class="pt s-hardcover" cx="814.4" cy="131.9" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 09:59 · #7,872</title></circle>
-<circle class="pt s-hardcover" cx="814.8" cy="131.9" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 10:03 · #7,872</title></circle>
-<circle class="pt s-hardcover" cx="820.6" cy="131.9" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 11:03 · #7,872</title></circle>
-<circle class="pt s-hardcover" cx="826.5" cy="132.8" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 12:04 · #8,012</title></circle>
-<circle class="pt s-hardcover" cx="832.2" cy="132.8" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 13:04 · #8,012</title></circle>
-<circle class="pt s-hardcover" cx="839.0" cy="132.8" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 14:14 · #8,012</title></circle>
-<circle class="pt s-hardcover" cx="843.2" cy="132.8" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 14:58 · #8,012</title></circle>
-<circle class="pt s-hardcover" cx="844.8" cy="132.8" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 15:14 · #8,012</title></circle>
-<circle class="pt s-hardcover" cx="852.5" cy="132.8" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 16:34 · #8,012</title></circle>
-<text class="dlab" x="820.0" y="136.8" style="--c:#2a78d6;--cd:#3987e5">Hardcover #8,012</text>
-<path class="line s-kindle" d="M820.6,172.2 L826.5,172.2 L832.2,172.2 L839.0,172.1 L843.2,172.1 L844.8,172.1 L852.5,172.1" style="--c:#eb6834;--cd:#d95926"/>
-<circle class="pt s-kindle" cx="820.6" cy="172.2" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 11:03 · #17,491</title></circle>
-<circle class="pt s-kindle" cx="826.5" cy="172.2" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 12:04 · #17,491</title></circle>
-<circle class="pt s-kindle" cx="832.2" cy="172.2" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 13:04 · #17,491</title></circle>
-<circle class="pt s-kindle" cx="839.0" cy="172.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 14:14 · #17,484</title></circle>
-<circle class="pt s-kindle" cx="843.2" cy="172.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 14:58 · #17,484</title></circle>
-<circle class="pt s-kindle" cx="844.8" cy="172.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 15:14 · #17,484</title></circle>
-<circle class="pt s-kindle" cx="852.5" cy="172.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 16:34 · #17,484</title></circle>
-<text class="dlab" x="820.0" y="176.1" style="--c:#eb6834;--cd:#d95926">Kindle #17,484</text>
+<text class="tick" x="56" y="264.0" text-anchor="end">#50,000</text>
+<line class="grid v" x1="139.7" x2="139.7" y1="28" y2="260"/>
+<text class="tick" x="139.7" y="276" text-anchor="middle">18:00</text>
+<line class="grid v" x1="316.6" x2="316.6" y1="28" y2="260"/>
+<text class="tick" x="316.6" y="276" text-anchor="middle">Wed 23</text>
+<line class="grid v" x1="493.5" x2="493.5" y1="28" y2="260"/>
+<text class="tick" x="493.5" y="276" text-anchor="middle">06:00</text>
+<line class="grid v" x1="670.4" x2="670.4" y1="28" y2="260"/>
+<text class="tick" x="670.4" y="276" text-anchor="middle">12:00</text>
+<line class="grid v" x1="847.3" x2="847.3" y1="28" y2="260"/>
+<text class="tick" x="847.3" y="276" text-anchor="middle">18:00</text>
+<line class="push" x1="134.8" x2="134.8" y1="28" y2="260"/>
+<text class="pushlab" x="138.8" y="64">x</text>
+<line class="push" x1="138.7" x2="138.7" y1="28" y2="260"/>
+<text class="pushlab" x="142.7" y="40">x</text>
+<line class="push" x1="756.9" x2="756.9" y1="28" y2="260"/>
+<text class="pushlab" x="760.9" y="64">linkedin</text>
+<path class="line s-hardcover" d="M152.5,180.1 L155.9,180.1 L610.9,73.7 L612.9,73.7 L642.4,73.7 L672.4,75.5 L701.8,75.5 L736.2,75.5 L757.9,75.5 L765.7,75.5 L805.0,75.5" style="--c:#2a78d6;--cd:#3987e5"/>
+<circle class="pt s-hardcover" cx="152.5" cy="180.1" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Tue 22 Sep 18:26 · #22,614</title></circle>
+<circle class="pt s-hardcover" cx="155.9" cy="180.1" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Tue 22 Sep 18:33 · #22,614</title></circle>
+<circle class="pt s-hardcover" cx="610.9" cy="73.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 09:59 · #7,872</title></circle>
+<circle class="pt s-hardcover" cx="612.9" cy="73.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 10:03 · #7,872</title></circle>
+<circle class="pt s-hardcover" cx="642.4" cy="73.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 11:03 · #7,872</title></circle>
+<circle class="pt s-hardcover" cx="672.4" cy="75.5" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 12:04 · #8,012</title></circle>
+<circle class="pt s-hardcover" cx="701.8" cy="75.5" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 13:04 · #8,012</title></circle>
+<circle class="pt s-hardcover" cx="736.2" cy="75.5" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 14:14 · #8,012</title></circle>
+<circle class="pt s-hardcover" cx="757.9" cy="75.5" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 14:58 · #8,012</title></circle>
+<circle class="pt s-hardcover" cx="765.7" cy="75.5" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 15:14 · #8,012</title></circle>
+<circle class="pt s-hardcover" cx="805.0" cy="75.5" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Hardcover · Wed 23 Sep 16:34 · #8,012</title></circle>
+<text class="dlab" x="797.0" y="67.5" text-anchor="end">Hardcover #8,012</text>
+<path class="line s-kindle" d="M642.4,154.2 L672.4,154.2 L701.8,154.2 L736.2,154.1 L757.9,154.1 L765.7,154.1 L805.0,154.1" style="--c:#eb6834;--cd:#d95926"/>
+<circle class="pt s-kindle" cx="642.4" cy="154.2" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 11:03 · #17,491</title></circle>
+<circle class="pt s-kindle" cx="672.4" cy="154.2" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 12:04 · #17,491</title></circle>
+<circle class="pt s-kindle" cx="701.8" cy="154.2" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 13:04 · #17,491</title></circle>
+<circle class="pt s-kindle" cx="736.2" cy="154.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 14:14 · #17,484</title></circle>
+<circle class="pt s-kindle" cx="757.9" cy="154.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 14:58 · #17,484</title></circle>
+<circle class="pt s-kindle" cx="765.7" cy="154.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 15:14 · #17,484</title></circle>
+<circle class="pt s-kindle" cx="805.0" cy="154.1" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Kindle · Wed 23 Sep 16:34 · #17,484</title></circle>
+<text class="dlab" x="797.0" y="146.1" text-anchor="end">Kindle #17,484</text>
 </svg></div>
 <div class="card"><svg class="chart" viewBox="0 0 880 300" role="img" aria-label="Hardcover category ranks — the badge is #1" data-chart="cats">
 <text class="ctitle" x="64" y="16">Hardcover category ranks — the badge is #1</text>
+<rect x="736.4" y="9" width="10" height="3" rx="1.5" class="lg s-cat3" style="--c:#1baf7a;--cd:#199e70"/>
+<text class="tick" x="750.4" y="16">Political Theory</text>
+<rect x="556.0" y="9" width="10" height="3" rx="1.5" class="lg s-cat2" style="--c:#eb6834;--cd:#d95926"/>
+<text class="tick" x="570.0" y="16">Engineering &amp; Technology</text>
+<rect x="408.6" y="9" width="10" height="3" rx="1.5" class="lg s-cat1" style="--c:#2a78d6;--cd:#3987e5"/>
+<text class="tick" x="422.6" y="16">Economic Conditions</text>
 <text class="ylab" x="64" y="294" >#1 at top</text>
 <line class="grid" x1="64" x2="864" y1="28.0" y2="28.0"/>
 <text class="tick" x="56" y="32.0" text-anchor="end">#1</text>
@@ -170,109 +131,62 @@ a { color:inherit }
 <text class="tick" x="56" y="197.2" text-anchor="end">#100</text>
 <line class="grid" x1="64" x2="864" y1="235.0" y2="235.0"/>
 <text class="tick" x="56" y="239.0" text-anchor="end">#125</text>
-<line class="grid v" x1="64.0" x2="64.0" y1="28" y2="260"/>
-<text class="tick" x="64.0" y="276" text-anchor="middle">Fri 18</text>
-<line class="grid v" x1="98.6" x2="98.6" y1="28" y2="260"/>
-<text class="tick" x="98.6" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="133.3" x2="133.3" y1="28" y2="260"/>
-<text class="tick" x="133.3" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="167.9" x2="167.9" y1="28" y2="260"/>
-<text class="tick" x="167.9" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="202.6" x2="202.6" y1="28" y2="260"/>
-<text class="tick" x="202.6" y="276" text-anchor="middle">Sat 19</text>
-<line class="grid v" x1="237.2" x2="237.2" y1="28" y2="260"/>
-<text class="tick" x="237.2" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="271.8" x2="271.8" y1="28" y2="260"/>
-<text class="tick" x="271.8" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="306.5" x2="306.5" y1="28" y2="260"/>
-<text class="tick" x="306.5" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="341.1" x2="341.1" y1="28" y2="260"/>
-<text class="tick" x="341.1" y="276" text-anchor="middle">Sun 20</text>
-<line class="grid v" x1="375.8" x2="375.8" y1="28" y2="260"/>
-<text class="tick" x="375.8" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="410.4" x2="410.4" y1="28" y2="260"/>
-<text class="tick" x="410.4" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="445.0" x2="445.0" y1="28" y2="260"/>
-<text class="tick" x="445.0" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="479.7" x2="479.7" y1="28" y2="260"/>
-<text class="tick" x="479.7" y="276" text-anchor="middle">Mon 21</text>
-<line class="grid v" x1="514.3" x2="514.3" y1="28" y2="260"/>
-<text class="tick" x="514.3" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="549.0" x2="549.0" y1="28" y2="260"/>
-<text class="tick" x="549.0" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="583.6" x2="583.6" y1="28" y2="260"/>
-<text class="tick" x="583.6" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="618.2" x2="618.2" y1="28" y2="260"/>
-<text class="tick" x="618.2" y="276" text-anchor="middle">Tue 22</text>
-<line class="grid v" x1="652.9" x2="652.9" y1="28" y2="260"/>
-<text class="tick" x="652.9" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="687.5" x2="687.5" y1="28" y2="260"/>
-<text class="tick" x="687.5" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="722.2" x2="722.2" y1="28" y2="260"/>
-<text class="tick" x="722.2" y="276" text-anchor="middle">18:00</text>
-<line class="grid v" x1="756.8" x2="756.8" y1="28" y2="260"/>
-<text class="tick" x="756.8" y="276" text-anchor="middle">Wed 23</text>
-<line class="grid v" x1="791.4" x2="791.4" y1="28" y2="260"/>
-<text class="tick" x="791.4" y="276" text-anchor="middle">06:00</text>
-<line class="grid v" x1="826.1" x2="826.1" y1="28" y2="260"/>
-<text class="tick" x="826.1" y="276" text-anchor="middle">12:00</text>
-<line class="grid v" x1="860.7" x2="860.7" y1="28" y2="260"/>
-<text class="tick" x="860.7" y="276" text-anchor="middle">18:00</text>
-<line class="push" x1="64.0" x2="64.0" y1="28" y2="260"/>
-<text class="pushlab" x="68.0" y="40">westland</text>
-<line class="push" x1="578.2" x2="578.2" y1="28" y2="260"/>
-<text class="pushlab" x="582.2" y="52">x</text>
-<line class="push" x1="721.2" x2="721.2" y1="28" y2="260"/>
-<text class="pushlab" x="725.2" y="64">x</text>
-<line class="push" x1="722.0" x2="722.0" y1="28" y2="260"/>
-<text class="pushlab" x="726.0" y="40">x</text>
-<line class="push" x1="690.4" x2="690.4" y1="28" y2="260"/>
-<text class="pushlab" x="694.4" y="52">linkedin</text>
-<line class="push" x1="843.0" x2="843.0" y1="28" y2="260"/>
-<text class="pushlab" x="847.0" y="64">linkedin</text>
-<path class="line s-cat1" d="M724.7,84.7 L725.3,84.7 L814.4,54.7 L814.8,54.7 L820.6,54.7 L826.5,53.0 L832.2,53.0 L839.0,53.0 L843.2,53.0 L844.8,53.0 L852.5,53.0" style="--c:#2a78d6;--cd:#3987e5"/>
-<circle class="pt s-cat1" cx="724.7" cy="84.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Tue 22 Sep 18:26 · #35</title></circle>
-<circle class="pt s-cat1" cx="725.3" cy="84.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Tue 22 Sep 18:33 · #35</title></circle>
-<circle class="pt s-cat1" cx="814.4" cy="54.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 09:59 · #17</title></circle>
-<circle class="pt s-cat1" cx="814.8" cy="54.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 10:03 · #17</title></circle>
-<circle class="pt s-cat1" cx="820.6" cy="54.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 11:03 · #17</title></circle>
-<circle class="pt s-cat1" cx="826.5" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 12:04 · #16</title></circle>
-<circle class="pt s-cat1" cx="832.2" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 13:04 · #16</title></circle>
-<circle class="pt s-cat1" cx="839.0" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 14:14 · #16</title></circle>
-<circle class="pt s-cat1" cx="843.2" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 14:58 · #16</title></circle>
-<circle class="pt s-cat1" cx="844.8" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 15:14 · #16</title></circle>
-<circle class="pt s-cat1" cx="852.5" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 16:34 · #16</title></circle>
-<text class="dlab" x="820.0" y="57.0" style="--c:#2a78d6;--cd:#3987e5">Economic Conditions #16</text>
-<path class="line s-cat2" d="M724.7,214.9 L725.3,214.9 L814.4,84.7 L814.8,84.7 L820.6,84.7 L826.5,86.4 L832.2,86.4 L839.0,86.4 L843.2,86.4 L844.8,86.4 L852.5,86.4" style="--c:#eb6834;--cd:#d95926"/>
-<circle class="pt s-cat2" cx="724.7" cy="214.9" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Tue 22 Sep 18:26 · #113</title></circle>
-<circle class="pt s-cat2" cx="725.3" cy="214.9" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Tue 22 Sep 18:33 · #113</title></circle>
-<circle class="pt s-cat2" cx="814.4" cy="84.7" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 09:59 · #35</title></circle>
-<circle class="pt s-cat2" cx="814.8" cy="84.7" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 10:03 · #35</title></circle>
-<circle class="pt s-cat2" cx="820.6" cy="84.7" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 11:03 · #35</title></circle>
-<circle class="pt s-cat2" cx="826.5" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 12:04 · #36</title></circle>
-<circle class="pt s-cat2" cx="832.2" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 13:04 · #36</title></circle>
-<circle class="pt s-cat2" cx="839.0" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 14:14 · #36</title></circle>
-<circle class="pt s-cat2" cx="843.2" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 14:58 · #36</title></circle>
-<circle class="pt s-cat2" cx="844.8" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 15:14 · #36</title></circle>
-<circle class="pt s-cat2" cx="852.5" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 16:34 · #36</title></circle>
-<text class="dlab" x="820.0" y="90.4" style="--c:#eb6834;--cd:#d95926">Engineering &amp; Technology #36</text>
-<path class="line s-cat3" d="M724.7,245.0 L725.3,245.0 L814.4,96.4 L814.8,96.4 L820.6,96.4 L826.5,86.4 L832.2,86.4 L839.0,86.4 L843.2,86.4 L844.8,86.4 L852.5,86.4" style="--c:#1baf7a;--cd:#199e70"/>
-<circle class="pt s-cat3" cx="724.7" cy="245.0" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Tue 22 Sep 18:26 · #131</title></circle>
-<circle class="pt s-cat3" cx="725.3" cy="245.0" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Tue 22 Sep 18:33 · #131</title></circle>
-<circle class="pt s-cat3" cx="814.4" cy="96.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 09:59 · #42</title></circle>
-<circle class="pt s-cat3" cx="814.8" cy="96.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 10:03 · #42</title></circle>
-<circle class="pt s-cat3" cx="820.6" cy="96.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 11:03 · #42</title></circle>
-<circle class="pt s-cat3" cx="826.5" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 12:04 · #36</title></circle>
-<circle class="pt s-cat3" cx="832.2" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 13:04 · #36</title></circle>
-<circle class="pt s-cat3" cx="839.0" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 14:14 · #36</title></circle>
-<circle class="pt s-cat3" cx="843.2" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 14:58 · #36</title></circle>
-<circle class="pt s-cat3" cx="844.8" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 15:14 · #36</title></circle>
-<circle class="pt s-cat3" cx="852.5" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 16:34 · #36</title></circle>
-<text class="dlab" x="820.0" y="90.4" style="--c:#1baf7a;--cd:#199e70">Political Theory #36</text>
+<line class="grid v" x1="139.7" x2="139.7" y1="28" y2="260"/>
+<text class="tick" x="139.7" y="276" text-anchor="middle">18:00</text>
+<line class="grid v" x1="316.6" x2="316.6" y1="28" y2="260"/>
+<text class="tick" x="316.6" y="276" text-anchor="middle">Wed 23</text>
+<line class="grid v" x1="493.5" x2="493.5" y1="28" y2="260"/>
+<text class="tick" x="493.5" y="276" text-anchor="middle">06:00</text>
+<line class="grid v" x1="670.4" x2="670.4" y1="28" y2="260"/>
+<text class="tick" x="670.4" y="276" text-anchor="middle">12:00</text>
+<line class="grid v" x1="847.3" x2="847.3" y1="28" y2="260"/>
+<text class="tick" x="847.3" y="276" text-anchor="middle">18:00</text>
+<line class="push" x1="134.8" x2="134.8" y1="28" y2="260"/>
+<text class="pushlab" x="138.8" y="64">x</text>
+<line class="push" x1="138.7" x2="138.7" y1="28" y2="260"/>
+<text class="pushlab" x="142.7" y="40">x</text>
+<line class="push" x1="756.9" x2="756.9" y1="28" y2="260"/>
+<text class="pushlab" x="760.9" y="64">linkedin</text>
+<path class="line s-cat1" d="M152.5,84.7 L155.9,84.7 L610.9,54.7 L612.9,54.7 L642.4,54.7 L672.4,53.0 L701.8,53.0 L736.2,53.0 L757.9,53.0 L765.7,53.0 L805.0,53.0" style="--c:#2a78d6;--cd:#3987e5"/>
+<circle class="pt s-cat1" cx="152.5" cy="84.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Tue 22 Sep 18:26 · #35</title></circle>
+<circle class="pt s-cat1" cx="155.9" cy="84.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Tue 22 Sep 18:33 · #35</title></circle>
+<circle class="pt s-cat1" cx="610.9" cy="54.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 09:59 · #17</title></circle>
+<circle class="pt s-cat1" cx="612.9" cy="54.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 10:03 · #17</title></circle>
+<circle class="pt s-cat1" cx="642.4" cy="54.7" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 11:03 · #17</title></circle>
+<circle class="pt s-cat1" cx="672.4" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 12:04 · #16</title></circle>
+<circle class="pt s-cat1" cx="701.8" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 13:04 · #16</title></circle>
+<circle class="pt s-cat1" cx="736.2" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 14:14 · #16</title></circle>
+<circle class="pt s-cat1" cx="757.9" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 14:58 · #16</title></circle>
+<circle class="pt s-cat1" cx="765.7" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 15:14 · #16</title></circle>
+<circle class="pt s-cat1" cx="805.0" cy="53.0" r="3.5" style="--c:#2a78d6;--cd:#3987e5"><title>Economic Conditions · Wed 23 Sep 16:34 · #16</title></circle>
+<path class="line s-cat2" d="M152.5,214.9 L155.9,214.9 L610.9,84.7 L612.9,84.7 L642.4,84.7 L672.4,86.4 L701.8,86.4 L736.2,86.4 L757.9,86.4 L765.7,86.4 L805.0,86.4" style="--c:#eb6834;--cd:#d95926"/>
+<circle class="pt s-cat2" cx="152.5" cy="214.9" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Tue 22 Sep 18:26 · #113</title></circle>
+<circle class="pt s-cat2" cx="155.9" cy="214.9" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Tue 22 Sep 18:33 · #113</title></circle>
+<circle class="pt s-cat2" cx="610.9" cy="84.7" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 09:59 · #35</title></circle>
+<circle class="pt s-cat2" cx="612.9" cy="84.7" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 10:03 · #35</title></circle>
+<circle class="pt s-cat2" cx="642.4" cy="84.7" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 11:03 · #35</title></circle>
+<circle class="pt s-cat2" cx="672.4" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 12:04 · #36</title></circle>
+<circle class="pt s-cat2" cx="701.8" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 13:04 · #36</title></circle>
+<circle class="pt s-cat2" cx="736.2" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 14:14 · #36</title></circle>
+<circle class="pt s-cat2" cx="757.9" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 14:58 · #36</title></circle>
+<circle class="pt s-cat2" cx="765.7" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 15:14 · #36</title></circle>
+<circle class="pt s-cat2" cx="805.0" cy="86.4" r="3.5" style="--c:#eb6834;--cd:#d95926"><title>Engineering &amp; Technology · Wed 23 Sep 16:34 · #36</title></circle>
+<path class="line s-cat3" d="M152.5,245.0 L155.9,245.0 L610.9,96.4 L612.9,96.4 L642.4,96.4 L672.4,86.4 L701.8,86.4 L736.2,86.4 L757.9,86.4 L765.7,86.4 L805.0,86.4" style="--c:#1baf7a;--cd:#199e70"/>
+<circle class="pt s-cat3" cx="152.5" cy="245.0" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Tue 22 Sep 18:26 · #131</title></circle>
+<circle class="pt s-cat3" cx="155.9" cy="245.0" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Tue 22 Sep 18:33 · #131</title></circle>
+<circle class="pt s-cat3" cx="610.9" cy="96.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 09:59 · #42</title></circle>
+<circle class="pt s-cat3" cx="612.9" cy="96.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 10:03 · #42</title></circle>
+<circle class="pt s-cat3" cx="642.4" cy="96.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 11:03 · #42</title></circle>
+<circle class="pt s-cat3" cx="672.4" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 12:04 · #36</title></circle>
+<circle class="pt s-cat3" cx="701.8" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 13:04 · #36</title></circle>
+<circle class="pt s-cat3" cx="736.2" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 14:14 · #36</title></circle>
+<circle class="pt s-cat3" cx="757.9" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 14:58 · #36</title></circle>
+<circle class="pt s-cat3" cx="765.7" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 15:14 · #36</title></circle>
+<circle class="pt s-cat3" cx="805.0" cy="86.4" r="3.5" style="--c:#1baf7a;--cd:#199e70"><title>Political Theory · Wed 23 Sep 16:34 · #36</title></circle>
 </svg></div>
 <h2>Pushes, and where the hardcover was six hours later</h2>
 <div class="card"><table><thead><tr><th>when</th><th>channel</th><th>what</th><th>Books overall</th><th>Δ</th><th>Economic Conditions</th><th>Δ</th></tr></thead>
-<tbody><tr><td class="mono">23 Sep 14:56</td><td><span class="chip">linkedin</span></td><td>THE BOOK POST — original, publisher video, &quot;in bookstores on 28 September… Bookworm… sign whatever copies he has left&quot; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7508456683279368192/">↗</a></td><td class="mono">#8,012 → #8,012</td><td class="flat mono">= 0</td><td class="mono">#16 → #16</td><td class="mono">= 0</td></tr><tr><td class="mono">22 Sep 17:58</td><td><span class="chip">x</span></td><td>reply: copies at Bookworm Bangalore from 23 Sep</td><td class="mono">— → #22,614</td><td class=" mono">—</td><td class="mono">— → #35</td><td class="mono">—</td></tr><tr><td class="mono">22 Sep 17:50</td><td><span class="chip">x</span></td><td>announcement — QT of @WestlandBooks (their amzn.in link + video), no image or link of his own</td><td class="mono">— → #22,614</td><td class=" mono">—</td><td class="mono">— → #35</td><td class="mono">—</td></tr><tr><td class="mono">22 Sep 12:30</td><td><span class="chip">linkedin</span></td><td>&quot;value of compounding / 500th article&quot; — book not named, no link · 32,404 imp 603 reactions at 6h</td><td class="mono">— → #22,614</td><td class=" mono">—</td><td class="mono">— → #35</td><td class="mono">—</td></tr><tr><td class="mono">21 Sep 17:04</td><td><span class="chip">x</span></td><td>&quot;500th article next month&quot; — decade stated, book not named · 3,242v 77L at 22 Sep</td><td class="mono">— → —</td><td class=" mono">—</td><td class="mono">— → —</td><td class="mono">—</td></tr><tr><td class="mono">18 Sep 00:00</td><td><span class="chip">westland</span></td><td>pre-order live on Amazon.in (hardcover ₹505, Kindle ₹475)</td><td class="mono">— → —</td><td class=" mono">—</td><td class="mono">— → —</td><td class="mono">—</td></tr></tbody></table></div>
+<tbody><tr><td class="mono">23 Sep 14:56</td><td><span class="chip">linkedin</span></td><td>THE BOOK POST — original, publisher video, &quot;in bookstores on 28 September… Bookworm… sign whatever copies he has left&quot; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7508456683279368192/">↗</a></td><td class="mono">#8,012 → —</td><td class="flat mono">due 20:56</td><td class="mono">#16 → —</td><td class="flat mono">due 20:56</td></tr><tr><td class="mono">22 Sep 17:58</td><td><span class="chip">x</span></td><td>reply: copies at Bookworm Bangalore from 23 Sep</td><td class="mono">— → —</td><td class="flat mono">before readings began</td><td class="mono">— → —</td><td class="flat mono">before readings began</td></tr><tr><td class="mono">22 Sep 17:50</td><td><span class="chip">x</span></td><td>announcement — QT of @WestlandBooks (their amzn.in link + video), no image or link of his own</td><td class="mono">— → —</td><td class="flat mono">before readings began</td><td class="mono">— → —</td><td class="flat mono">before readings began</td></tr><tr><td class="mono">22 Sep 12:30</td><td><span class="chip">linkedin</span></td><td>&quot;value of compounding / 500th article&quot; — book not named, no link · 32,404 imp 603 reactions at 6h</td><td class="mono">— → —</td><td class="flat mono">before readings began</td><td class="mono">— → —</td><td class="flat mono">before readings began</td></tr><tr><td class="mono">21 Sep 17:04</td><td><span class="chip">x</span></td><td>&quot;500th article next month&quot; — decade stated, book not named · 3,242v 77L at 22 Sep</td><td class="mono">— → —</td><td class="flat mono">before readings began</td><td class="mono">— → —</td><td class="flat mono">before readings began</td></tr><tr><td class="mono">18 Sep 00:00</td><td><span class="chip">westland</span></td><td>pre-order live on Amazon.in (hardcover ₹505, Kindle ₹475)</td><td class="mono">— → —</td><td class="flat mono">before readings began</td><td class="mono">— → —</td><td class="flat mono">before readings began</td></tr></tbody></table></div>
 <h2>Readings</h2>
 <div class="card"><table><thead><tr><th>when</th><th>edition</th><th>store rank</th><th>categories</th><th>ratings</th></tr></thead><tbody><tr><td class="mono">23 Sep 16:34</td><td>kindle</td><td class="mono">#17,484</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 16:34</td><td>hardcover</td><td class="mono">#8,012</td><td>#16 Economic Conditions · #36 Engineering &amp; Technology · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 15:14</td><td>kindle</td><td class="mono">#17,484</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 15:14</td><td>hardcover</td><td class="mono">#8,012</td><td>#16 Economic Conditions · #36 Engineering &amp; Technology · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 14:58</td><td>kindle</td><td class="mono">#17,484</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 14:58</td><td>hardcover</td><td class="mono">#8,012</td><td>#16 Economic Conditions · #36 Engineering &amp; Technology · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 14:14</td><td>kindle</td><td class="mono">#17,484</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 14:14</td><td>hardcover</td><td class="mono">#8,012</td><td>#16 Economic Conditions · #36 Engineering &amp; Technology · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 13:04</td><td>kindle</td><td class="mono">#17,491</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 13:04</td><td>hardcover</td><td class="mono">#8,012</td><td>#16 Economic Conditions · #36 Engineering &amp; Technology · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 12:04</td><td>kindle</td><td class="mono">#17,491</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 12:04</td><td>hardcover</td><td class="mono">#8,012</td><td>#16 Economic Conditions · #36 Engineering &amp; Technology · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 11:03</td><td>kindle</td><td class="mono">#17,491</td><td>#9 Agriculture &amp; Farming · #36 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 11:03</td><td>hardcover</td><td class="mono">#7,872</td><td>#17 Economic Conditions · #35 Engineering &amp; Technology · #42 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 10:03</td><td>kindle</td><td class="mono">—</td><td>unranked</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 10:03</td><td>hardcover</td><td class="mono">#7,872</td><td>#17 Economic Conditions · #35 Engineering &amp; Technology · #42 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 09:59</td><td>kindle</td><td class="mono">—</td><td>unranked</td><td class="mono">0</td></tr><tr><td class="mono">23 Sep 09:59</td><td>hardcover</td><td class="mono">#7,872</td><td>#17 Economic Conditions · #35 Engineering &amp; Technology · #42 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">22 Sep 18:33</td><td>kindle</td><td class="mono">—</td><td>unranked</td><td class="mono">0</td></tr><tr><td class="mono">22 Sep 18:33</td><td>hardcover</td><td class="mono">#22,614</td><td>#35 Economic Conditions · #113 Engineering &amp; Technology · #131 Political Theory</td><td class="mono">0</td></tr><tr><td class="mono">22 Sep 18:26</td><td>kindle</td><td class="mono">—</td><td>unranked</td><td class="mono">0</td></tr><tr><td class="mono">22 Sep 18:26</td><td>hardcover</td><td class="mono">#22,614</td><td>#35 Economic Conditions · #113 Engineering &amp; Technology · #131 Political Theory</td><td class="mono">0</td></tr></tbody></table></div>
 <p class="foot">Built by <code>bin/dashboard.py</code> from <code>rank-log.csv</code> and <code>pushes.md</code>. Rank is recomputed by Amazon roughly hourly and weights the last few hours heavily; a push shows in the next one or two readings, then decays. Dashed purple lines are pushes. Nothing here predicts anything.</p>
